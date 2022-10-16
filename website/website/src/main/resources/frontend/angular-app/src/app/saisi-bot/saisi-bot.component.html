@@ -1,0 +1,10 @@
+<p>Bienvenue dans la maison de balkany </p>
+<div>
+  <label for="nom">Ecrire à yann qq chose de gentil (anonyme) :</label>
+  <input type="text" id="nom" name="nom"  [(ngModel)]="text">
+</div>
+<div>
+  <button (click)="sendMessage()">
+    <span>Envoyer</span>
+  </button>
+</div>
