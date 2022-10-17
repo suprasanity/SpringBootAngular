@@ -13,6 +13,8 @@ public class User implements Serializable {
     @Column(name = "id")
     private long id;
 
+    @Column(name = "mdp")
+    private String mdp;
     @Column(name="nom")
     private  String nom;
 
