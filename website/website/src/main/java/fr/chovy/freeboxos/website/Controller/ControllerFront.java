@@ -1,15 +1,10 @@
 package fr.chovy.freeboxos.website.Controller;
 
-import discord4j.rest.service.UserService;
 import fr.chovy.freeboxos.website.DAO.UserDAO;
-import fr.chovy.freeboxos.website.service.userService;
 import fr.chovy.freeboxos.website.WebsiteApplication;
+import fr.chovy.freeboxos.website.service.userService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "chovy.freeboxos.fr")
@@ -22,7 +17,7 @@ public class ControllerFront {
 
     @PostMapping("/getAllUser")
     @ResponseBody
-    public List authentified(){
+    public String getUser(){
         return sb.getAllUser();
     }
 

@@ -1,27 +1,23 @@
 package fr.chovy.freeboxos.website.DAO;
 
-import org.apache.logging.log4j.util.Constants;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-import javax.sql.DataSource;
-import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 
 @Repository
 public class UserDAO {
 
-    private JdbcTemplate jdbcTemplate;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-    @Autowired
-    public void setDataSource(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
-    }
+    public String getAllUser(){
+        String user;
 
-    public List getAllUser(){
-        return jdbcTemplate.queryForList("select nom from utilisateur");
+        user = entityManager.createQuery("SELECT COUNT(u) FROM User u").getSingleResult().toString();
+        return user;
+
     }
 
 }

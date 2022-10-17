@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 
 public  class Bot {
-private String token ="NTgzOTk2MjU0ODYyNzA0NjUw.GzfoqS.Mn9r0i16_z55vDft1xWjdA-Q3PjJTtojuFDeQs";
+private String token ="NTgzOTk2MjU0ODYyNzA0NjUw.GefezB.5gCFWxHTiohtQz0kB3KW-FSVnJC1zIf4FpTeBE";
 private JDABuilder build=JDABuilder.createDefault(token);
 private JDA jda;
 public Bot() {

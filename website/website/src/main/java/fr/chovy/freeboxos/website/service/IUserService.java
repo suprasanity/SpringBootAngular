@@ -9,5 +9,5 @@ import java.util.List;
 public interface IUserService {
     @Autowired
     UserDAO repoUser = new UserDAO();
-    List getAllUser();
+    String getAllUser();
 }

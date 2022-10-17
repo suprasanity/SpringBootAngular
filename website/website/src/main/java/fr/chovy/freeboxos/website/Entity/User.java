@@ -6,8 +6,8 @@ import java.util.Date;
 
 @Entity
 @Table(name="utilisateur")
-public class User implements Serializable {
-    private static final long serialVersionUID = 746237126088051312L;
+public class User {
+
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -21,9 +21,4 @@ public class User implements Serializable {
     @Column(name="prenom")
     private String prenom;
 
-    @Column(name="email")
-    private String email;
-
-    @Column(name = "date_naissance")
-    private Date date_naissance;
 }

@@ -2,6 +2,7 @@ package fr.chovy.freeboxos.website.service;
 
 import com.austinv11.servicer.Service;
 import fr.chovy.freeboxos.website.DAO.UserDAO;
+import fr.chovy.freeboxos.website.Entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +18,7 @@ public class userService implements IUserService{
 
 
     @Override
-    public List getAllUser(){
+    public String getAllUser(){
         return repoUser.getAllUser();
     }
 }
