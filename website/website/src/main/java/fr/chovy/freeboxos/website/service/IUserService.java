@@ -1,8 +1,9 @@
 package fr.chovy.freeboxos.website.service;
 
-import com.austinv11.servicer.Service;
+
 import fr.chovy.freeboxos.website.DAO.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
