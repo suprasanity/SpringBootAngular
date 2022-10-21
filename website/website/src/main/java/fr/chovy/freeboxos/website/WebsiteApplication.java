@@ -10,7 +10,7 @@ public static Bot bot;
     public static void main(String[] args) {
 
        // SpringApplication.run(WebsiteApplication.class, args);
-        bot =new Bot("NTgzOTk2MjU0ODYyNzA0NjUw.GwFCGw.G2QrIlTmGwSeoNkYAZH2jYD93glewAPZGHVW74");
+        bot =new Bot(args[0]);
     }
 
 }
