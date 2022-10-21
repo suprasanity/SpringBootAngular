@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component(value = "bot")
 @Scope("singleton")
 public  class Bot {
-private String token ="NTgzOTk2MjU0ODYyNzA0NjUw.GSc4_e.NZnwxdCX0AZaog6pjqtbRR48XmOeOIZ8tr_qpY";
+private String token ="NTgzOTk2MjU0ODYyNzA0NjUw.G-w6KO.A79EdCWR87I6kAHyw9ywaTKQSNVjeftwSRH3hM";
 private JDABuilder build;
 private JDA jda;
 public Bot() {

@@ -9,7 +9,7 @@ public class WebsiteApplication {
 public static Bot bot;
     public static void main(String[] args) {
 
-       // SpringApplication.run(WebsiteApplication.class, args);
+        SpringApplication.run(WebsiteApplication.class, args);
         bot =new Bot();
     }
 
